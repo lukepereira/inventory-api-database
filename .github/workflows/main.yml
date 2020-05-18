@@ -12,7 +12,7 @@ jobs:
       - name: Build the docker-compose stack
         run: make server.install
 
-      - name: Run unit tests
+      - name: Run unit tests with coverage
         run: make test.coverage
 
       - name: Run lint
